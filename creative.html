@@ -30,27 +30,31 @@
     but I also do product shoots and portraits.
   </p>
 <p> Tropic Wonder (2015):</p>
-  <p>
-    <img class="pics1" src="cw/tw_1.jpg" style="width:300px">
-    <img class="pics1" src="cw/tw_2.jpg" style="width:300px">
+ 
+    
+    <p>
+    <img class="pics" src="cw/tw_1.jpg" style="width:400px">
+    <img class="pics" src="cw/tw_2.jpg" style="width:400px">
+
 
   </p>
   <script>
-    var picInd1 = 0;
-    flip_through1();
-
-    function flip_through1() {
+    var picInd = 0;
+    flip_through();
+    function flip_through() {
         var i;
-        var x = document.getElementsByClassName("pics1");
+        var x = document.getElementsByClassName("pics");
         for (i = 0; i < x.length; i++) {
           x[i].style.display = "none";
         }
-        picInd1++;
-        if (picInd1 > x.length) {picInd1 = 1}
-        x[picInd1-1].style.display = "block";
-        setTimeout(flip_through1, 3000);
+        picInd++;
+        if (picInd > x.length) {picInd = 1}
+        x[picInd-1].style.display = "block";
+        setTimeout(flip_through, 3000);
     }
   </script>
+    
+    
     
   <h2> Graphic Design </h2>
   <p>
