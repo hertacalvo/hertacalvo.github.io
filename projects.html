@@ -3,9 +3,11 @@
 <head>
   <link rel="stylesheet" href="main.css">
 <title>Herta Calvo-Faugier</title>
+<link rel="icon" href="img/icon.png" />
+
 </head>
 
-<body>
+<div class="topbar">
   <div class=navbar>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -15,31 +17,58 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
+</div>
 
-
+<body>
   <div class="topnav">
 
   <h1> Projects </h1>
   <h2> PYXEL - Single player game in Python </h2>
   <p>
     Single-player game with two game modes where protagonist
-    is a pixel (see the pun?) whose main goal is to avoid enemies.
+    is a pixel whose main goal is to avoid enemies.
   </p>
   <p>
     The first game mode has differents kinds of enemies
-    (one shoots lasers, it's pretty OP), and the second
-    mode has tokens to be collected (I made the sprites,
-    go check them out)
+    (e.g. one type shoots lasers), and the second
+    mode has tokens to be collected.
   </p>
   <p>
-    All things Pyxel are available at the github repo
-    or devpost page
+    More information about Pyxel (as well as souce code) available at
+    <a href="https://github.com/leew15/Pyxel">github repo</a>
+    or
+    <a href="https://devpost.com/software/cs1000s">devpost page</a>.
   </p>
+
+  <p>
+    <img class="pics" src="pr/py_1.png" style="width:400px">
+    <img class="pics" src="pr/py_2.png" style="width:400px">
+    <img class="pics" src="pr/py_3.png" style="width:400px">
+
+
+  </p>
+  <script>
+    var picInd = 0;
+    flip_through();
+
+    function flip_through() {
+        var i;
+        var x = document.getElementsByClassName("pics");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        picInd++;
+        if (picInd > x.length) {picInd = 1}
+        x[picInd-1].style.display = "block";
+        setTimeout(flip_through, 3000);
+    }
+
+  </script>
 
 </body>
 
 <footer>
-  <p> I'm under construction, sorry for the appearance!</p>
+  <p> Template designed by Herta Calvo-Faugier, 2017</p>
 </footer>
 
 </html>
