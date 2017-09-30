@@ -136,8 +136,8 @@ img.general{
 
 img.pics{
   display: block;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 img.pics0{
