@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Rajdhani');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 h1 {
-  font-family: 'Rajdhani';
+  font-family: 'Lato';
   font-size: 64px;
   font-weight: bold;
   text-align: center;
@@ -10,7 +11,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Rajdhani';
+  font-family: 'Lato';
   font-size: 32px;
   font-weight: bold;
   text-align: center;
@@ -52,28 +53,32 @@ a:hover {
   color: #247699;
 }
 
+div.navbar {
+  font-size: 16px;
+  font-weight: bold;
+  color: #6b6b6b;
+
+}
+
 div.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: white;
-    color: inherit;
-    font-size: 12px;
 }
 
 div.navbar li {
     float: left;
     color: inherit;
     background-color: white;
-    font-size: 18px;
 }
 
 div.navbar li a {
     display: block;
     color: inherit;
     text-align: center;
-    padding: 14px 30px;
+    padding: 16px 30px;
     text-decoration: none;
     background-color: white;
     font-size: inherit;
@@ -96,7 +101,7 @@ div.navbar .active {
 }
 
 div.topbar {
-  font-family: 'Rajdhani';
+  font-family: 'Lato';
   position: fixed;
   top: 0;
   left: 0;
@@ -113,7 +118,7 @@ div.topbar p{
 }
 
 footer {
-  font-family: 'Rajdhani';
+  font-family: 'Lato';
   position: fixed;
   bottom: 0;
   left: 0;
