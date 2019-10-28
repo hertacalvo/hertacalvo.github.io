@@ -33,6 +33,12 @@ body p{
   text-align: center;
 }
 
+body p2{
+  color: #6b6b6b;
+  font-size: 18px;
+  text-align: left;
+}
+
 a {
   color: #33a0ce;
   font-size: 24px;
